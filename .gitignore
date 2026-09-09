@@ -1,0 +1,39 @@
+# ---------------------------------------------------------------------------
+# DENY BY DEFAULT.
+#
+# The first rule ignores everything. Nothing reaches this public repository
+# unless it is explicitly re-included below.
+#
+# This is deliberate, not paranoia. The working folder this repo lives inside
+# also holds copyrighted article PDFs, raw transcripts of real conversations,
+# unpublished pre-defense drafts carrying an advisor's written edits, and an
+# IPUMS API key. A conventional allow-by-default .gitignore would put every
+# one of those a single `git add -A` away from being public and permanent.
+#
+# To publish a new file, add an explicit `!` line for it. Re-include the
+# containing directory first, or git will not descend into it.
+# ---------------------------------------------------------------------------
+
+*
+
+# --- Repository metadata ---------------------------------------------------
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/.env.example
+
+# --- Analysis code ---------------------------------------------------------
+!/03 Analysis and Code/
+!/03 Analysis and Code/*.py
+!/03 Analysis and Code/nhgis_extract_spec.json
+
+# --- Never, under any circumstances ----------------------------------------
+# Redundant (the `*` above already covers these) and kept anyway, so that a
+# future edit to the allow-list cannot quietly expose them.
+/03 Analysis and Code/.env
+**/.env
+**/*.key
+**/*.pem
+**/.DS_Store
+**/__pycache__/
+**/*.pyc

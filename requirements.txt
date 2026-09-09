@@ -1,0 +1,9 @@
+# Python 3.9+ (3.11+ recommended)
+#
+#   python3 -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+
+requests>=2.31          # IPUMS API v2 and Census geocoder HTTP calls
+python-dotenv>=1.0      # loads NHGIS_API_KEY from .env
+pandas>=2.0             # appendix assembly, determinant matching
+openpyxl>=3.1           # reads/writes the determinant .xlsx workbooks

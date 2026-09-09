@@ -1,0 +1,91 @@
+{
+  "description": "ca_tract_acs2018_2022_curated",
+  "datasets": {
+    "2018_2022_ACS5a": {
+      "dataTables": [
+        "B02001",
+        "B03002",
+        "B08301",
+        "B09002",
+        "B11003",
+        "B11005",
+        "B12001",
+        "B15002",
+        "B15003",
+        "B17017",
+        "B17021",
+        "B19001",
+        "B19013",
+        "B19054",
+        "B19057",
+        "B22010",
+        "B23007",
+        "B23008",
+        "B23009",
+        "B23025",
+        "B25002",
+        "B25003",
+        "B25004",
+        "B25008",
+        "B25014",
+        "B25024",
+        "B25034",
+        "B25038",
+        "B28002",
+        "B28003",
+        "C16002",
+        "C17002"
+      ],
+      "geogLevels": [
+        "tract"
+      ]
+    },
+    "2018_2022_ACS5b": {
+      "dataTables": [
+        "B05002",
+        "B05006",
+        "B07001",
+        "B07003",
+        "B15001",
+        "B17001",
+        "B19083",
+        "B21003",
+        "B22002",
+        "B22003",
+        "B23001",
+        "B25026"
+      ],
+      "geogLevels": [
+        "tract"
+      ]
+    }
+  },
+  "shapefiles": [
+    "us_tract_2020_tl2020"
+  ],
+  "geographicExtents": [
+    "060"
+  ],
+  "dataFormat": "csv_header",
+  "breakdownAndDataTypeLayout": "single_file",
+  "_historical_extract_separate": {
+    "description": "ca_tract_1940_holc_controls",
+    "datasets": {
+      "1940_tPH_Major": {
+        "dataTables": [
+          "NT2",
+          "NT27",
+          "NT29",
+          "NT32",
+          "NT4"
+        ],
+        "geogLevels": [
+          "tract"
+        ]
+      }
+    },
+    "dataFormat": "csv_header",
+    "breakdownAndDataTypeLayout": "single_file",
+    "note": "Submit as its own extract. Check details[ds]['geographicInstances'] for CA cities."
+  }
+}
